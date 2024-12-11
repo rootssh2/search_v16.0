@@ -1,26 +1,24 @@
-# Login Search v16.0
+# Login Search Tool
 
-Bem-vindo ao **Login Search v16.0**! Este script foi desenvolvido para realizar buscas em arquivos de texto contendo informações de login, filtrando e organizando os dados em diferentes formatos, como `login:senha`, `email:senha` ou `número:senha`.
+Este é um script Python para buscar, manipular e processar logins de arquivos `.txt`. Ele oferece funcionalidades para pesquisar logins em pastas de banco de dados, remover duplicados e dividir grandes arquivos em partes menores.
 
 ## Funcionalidades
 
-- **Busca de logins** em arquivos `.txt` dentro de diretórios especificados.
-- **Filtro por tipo de login**: `login:senha`, `email:senha` ou `número:senha`.
-- **Remoção de duplicados** e linhas inválidas automaticamente.
-- **Salvamento dos resultados** em arquivos organizados por tipo de login.
-- **Geração de wordlist limpa** pronta para uso.
-- **Logs detalhados** para monitoramento das operações realizadas.
+- **Busca de Logins**: Permite buscar logins e senhas em arquivos `.txt` dentro de pastas de banco de dados.
+- **Remover Duplicados**: Remove logins duplicados ou inválidos e gera uma nova `wordlist`.
+- **Dividir Arquivo**: Divide arquivos grandes em partes menores para facilitar o manuseio.
 
 ## Requisitos
 
 - Python 3.x
 - Bibliotecas necessárias:
+  - `argparse`
   - `colorama`
+  - `re`
+  - `pathlib`
   - `logging`
 
-### Instalação de dependências
-
-Para instalar a biblioteca `colorama`, execute o seguinte comando:
+Instale as dependências com o seguinte comando:
 
 ```bash
-pip install colorama
+pip install -r requirements.txt
