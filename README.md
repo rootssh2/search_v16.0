@@ -26,8 +26,8 @@ Ferramenta de busca e manipulação de logins desenvolvida em Python, com funcio
 
 1. Clone o repositório
 ```bash
-git clone https://seu-usuario/login-search-tool.git
-cd login-search-tool
+git clone https://github.com/rootssh2/search_v16.0.git
+cd search_v16.0
 ```
 
 2. Instale as dependências
