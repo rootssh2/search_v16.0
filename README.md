@@ -45,7 +45,7 @@ pip install colorama
 
 ### Exemplo de Uso
 ```bash
-python search_v24.0.py
+python search.py
 ```
 
 ### Busca de Logins
