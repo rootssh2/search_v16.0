@@ -39,7 +39,7 @@ pip install colorama
 
 ### Menu Principal
 - `1`: Buscar Logins
-- `2`: Dividir Arquivo
+- `2`: Dividir Arquivos
 - `3`: Remover Duplicados
 - `q`: Sair
 
