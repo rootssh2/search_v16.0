@@ -1,81 +1,27 @@
-# Login Search Tool 🔍🔐
+# Ferramenta de Busca de Logins - v25.1
 
-## Descrição
-Ferramenta de busca e manipulação de logins desenvolvida em Python, com funcionalidades para pesquisar, filtrar e processar arquivos de logins.
+## Visão Geral
 
-## 🚀 Funcionalidades
-- **Busca de Logins**: Pesquise logins por palavra-chave
-- **Tipos de Busca**: 
-  - Login
-  - Email
-  - Número
-  - IPTV
-- **Remoção de Duplicados**: Remove entradas duplicadas de arquivos de logins
-- **Divisão de Arquivos**: Divide arquivos grandes em partes menores
+Este script em Python foi projetado para procurar, manipular e limpar credenciais de login em vários arquivos de texto. Ele oferece funcionalidades para:
 
-## 📋 Requisitos
-- Python 3.7+
-- Bibliotecas:
-  - colorama
-  - argparse
-  - pathlib
-  - logging
-  - re (expressões regulares)
+- **Busca de Logins** baseada em critérios específicos em diretórios designados.
+- **Divisão de Arquivos Grandes** em partes menores.
+- **Remoção de Logins Duplicados** dos conjuntos de resultados.
+- **Limpeza de Dados** usando expressões regulares específicas para filtrar entradas inválidas ou indesejadas.
 
-## 🛠️ Instalação
+## Funcionalidades
 
-1. Clone o repositório
+- **Busca de Logins:** Procura por logins baseados na entrada do usuário dentro de pastas 'db' ou em uma estrutura de diretório 'cloud'.
+- **Divisão de Arquivos:** Divide arquivos de texto grandes em arquivos menores para melhor gerenciamento.
+- **Remoção de Duplicatas:** Remove entradas duplicadas de arquivos de login, permitindo a personalização do formato de saída.
+- **Limpeza de Dados:** Limpa dados de login usando padrões de regex predefinidos para garantir que apenas e-mails e senhas válidas sejam mantidos.
+
+## Dependências
+
+- [colorama](https://pypi.org/project/colorama/) - Para saída colorida no terminal.
+- [tqdm](https://pypi.org/project/tqdm/) - Para barras de progresso na execução das tarefas.
+
+Instale as dependências com:
+
 ```bash
-git clone https://github.com/rootssh2/search_v16.0.git
-cd search_v16.0
-```
-
-2. Instale as dependências
-```bash
-pip install colorama
-```
-
-## 🖥️ Uso
-
-### Menu Principal
-- `1`: Buscar Logins
-- `2`: Dividir Arquivos
-- `3`: Remover Duplicados
-- `q`: Sair
-
-### Exemplo de Uso
-```bash
-python search.py
-```
-
-### Busca de Logins
-1. Selecione uma pasta DB
-2. Escolha o tipo de login
-3. Digite uma palavra-chave de busca
-4. Resultados serão salvos na pasta `resultados/`
-
-### Remover Duplicados
-1. Selecione o arquivo na pasta `resultados/`
-2. Logins duplicados serão removidos
-3. Resultado será salvo em `wordlist/combo.txt`
-
-### Divisão de Arquivos
-1. Coloque o arquivo na pasta `divisor/`
-2. Escolha o número inicial do arquivo
-3. Defina o tamanho de cada parte em MB
-
-## 🔒 Avisos de Segurança
-- Utilize a ferramenta apenas para fins legais e éticos
-- Respeite políticas de privacidade e termos de uso
-
-## 🤝 Contribuições
-Contribuições são bem-vindas! Por favor, abra uma issue ou envie um pull request.
-
-## 👥 Autor
-by Root2022
-
-## 📞 Contato
-Telegram: t.me/Root2022
-
-## 🛡️ Disclaimer
-Esta ferramenta é fornecida "como está", sem garantias de qualquer tipo.
+pip install colorama tqdm
